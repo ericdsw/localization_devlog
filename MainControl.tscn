@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://MainControl.gd" type="Script" id=1]
+
+[node name="MainControl" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpanishButton" type="Button" parent="."]
+margin_left = 96.0
+margin_top = 111.0
+margin_right = 246.0
+margin_bottom = 141.0
+rect_min_size = Vector2( 150, 30 )
+text = "UI_SPANISH_BUTTON"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnglishButton" type="Button" parent="."]
+margin_left = 280.0
+margin_top = 111.0
+margin_right = 430.0
+margin_bottom = 141.0
+rect_min_size = Vector2( 150, 30 )
+text = "UI_ENGLISH_BUTTON"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelOne" type="Label" parent="."]
+margin_left = 114.292
+margin_top = 188.877
+margin_right = 216.292
+margin_bottom = 202.877
+text = "UI_STRING_ONE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelTwo" type="Label" parent="."]
+margin_left = 114.292
+margin_top = 220.877
+margin_right = 216.292
+margin_bottom = 234.877
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DialoguePath" type="Label" parent="."]
+margin_left = 114.292
+margin_top = 252.877
+margin_right = 216.292
+margin_bottom = 266.877
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="SpanishButton" to="." method="_on_SpanishButton_pressed"]
+[connection signal="pressed" from="EnglishButton" to="." method="_on_EnglishButton_pressed"]

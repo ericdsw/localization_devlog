@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "LManager",
+"language": "GDScript",
+"path": "res://LocalizationManager.gd"
+} ]
+_global_script_class_icons={
+"LManager": ""
+}
+
+[application]
+
+config/name="Localization Devlog"
+run/main_scene="res://MainControl.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+LocalizationManager="*res://LocalizationManager.tscn"
+
+[locale]
+
+translations=PoolStringArray( "res://resources/translations.en.translation", "res://resources/translations.es.translation" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
